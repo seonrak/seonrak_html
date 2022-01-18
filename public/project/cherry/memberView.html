@@ -47,7 +47,7 @@
 	<tr>
 		<th style="background-color: gray;">휴대폰</th>
 		<th colspan="2">010-1111-2222
-		<span class="badge rounded-pill bg-primary">SMS</span>
+		<span class="badge rounded-pill bg-primary" data-bs-toggle="modal" href="#emailmodalToggle2" role="button">SMS</span>
 		</th>
 		<th style="background-color: gray;">모바일 마케팅 수신 동의</th>
 		<th colspan="2">x</th>
@@ -55,11 +55,11 @@
 	<tr>
 		<th style="background-color: gray;">전화번호</th>
 		<th colspan="2">02-0000-0000
-		<span class="badge rounded-pill bg-primary">Call</span>
+		<span class="badge rounded-pill bg-primary" data-bs-toggle="modal" href="#emailmodalToggle3" role="button">Call</span>
 		</th>
 		<th style="background-color: gray;">팩스번호</th>
 		<th colspan="2">032-503-4444
-		<span class="badge rounded-pill bg-primary">Fax</span>
+		<span class="badge rounded-pill bg-primary" data-bs-toggle="modal" href="#emailmodalToggle4" role="button">Fax</span>
 		</th>
 		</tr>
 	<tr>
@@ -171,7 +171,89 @@
   </div>
 </div>
 				<hr>
-	
+				
+				<div class="modal fade" id="emailmodalToggle2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">휴대폰 변경</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">휴대폰 변경전:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">휴대폰 변경후:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
+        <button type="button" class="btn btn-primary">수정 완료</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+				<div class="modal fade" id="emailmodalToggle3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">전화번호 변경</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">전화번호 변경전:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">전화번호 변경후:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
+        <button type="button" class="btn btn-primary">수정 완료</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+			<div class="modal fade" id="emailmodalToggle4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel4">팩스번호 변경</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">팩스번호 변경전:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">팩스번호 변경후:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">나가기</button>
+        <button type="button" class="btn btn-primary">수정 완료</button>
+      </div>
+    </div>
+  </div>
+</div>
 		<a href="./memberbelist.html"><button class="btn btn-danger">삭제</button></a>
 		<a href="./memberEdit.html"><button class="btn btn-dark">수정</button></a>
 		
