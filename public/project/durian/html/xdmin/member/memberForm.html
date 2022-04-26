@@ -3,110 +3,214 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-<link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>seonrak(여기에 본인이름 넣기)</title>
 <!--css내용  -->
-
-	
+<style type="text/css">
+	table, th, td{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td{
+		padding: 20px;
+		}
+</style>
 </head>
 
 <body>
 <!--colspan 가로 rowspan 세로  -->
-<div class="container-fluid">
-<div class = "row">
-<div class ="gy-3 col-md-6">
-<label for = "id" class="form-label">아이디</label><input type="text" class="form-control" id="id" maxlength="20" minlength="4"
- placeholder="영문(대소문자),숫자,특수문자(4~16조합)"></div>
- 	</div>
- </div>
- <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-12 col-md-6">
-  	<label for ="password" class = "form-label">비밀번호</label><input type="text" class = "form-control" id="password" maxlength="20" minlength ="4"
-  	placeholder="영문(대소문자),숫자,특수문자(4~16조합)">
-  		</div>
-  		<div class = "col-12 col-md-6">
-  	<label for ="passwordcheck" class = "form-label">비밀번호 확인</label><input type="text" class = "form-control" id="passwordcheck" maxlength="20" minlength ="4"
-  	placeholder="영문(대소문자),숫자,특수문자(4~16조합)">
-  		</div>
-  	</div>
-  </div>
-  
- <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-12 col-md-6">
-  	<label for ="name" class = "form-label">이름</label><input type="text" class = "form-control" id="name" maxlength="20" minlength ="4">
-  		</div>
-  		<div class = "col-12 col-md-6">
-  	<label for ="nameeg" class = "form-label">이름(영문)</label><input type="text" class = "form-control" id="nameeg" maxlength="20" minlength ="4">
-  		</div>
-  	</div>
-  </div>
-  
- <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-12 col-md-6">
-  	<label for ="name" class = "form-label">이름</label><input type="text" class = "form-control" id="name" maxlength="20" minlength ="4">
-  		</div>
-  		<div class = "col-12 col-md-6">
-  	<label for ="nameeg" class = "form-label">성</label><input type="text" class = "form-control" id="nameeg" maxlength="20" minlength ="4">
-  		</div>
-  	</div>
-  </div>
-  
-  <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-12 col-md-6">
-  	<label for ="password" class = "form-label">핸드폰</label><input type="text" class = "form-control" id="password" maxlength="20" minlength ="4"
-  	placeholder="010-0000-0000">
-  		</div>
-  		<div class = "col-12 col-md-6">
-  	<label for ="mobile" class = "form-label">핸드폰 정보 마케팅 사용 동의</label>
-  	<br>
-  	<input type="checkbox" id="" name="mobile" value="o">동의합니다
-  	<input type="checkbox" id="" name="people" value="x"> 동의하지않습니다
-  		</div>
-  	</div>
-  </div>
-  
-    
- <div class = "container-fluid">
-  <div class = "row">
-  <div class = "col-12 col-md-6">
-  	<label for ="number" class = "form-label">전화번호</label><input type="text" class = "form-control" id="number">
-  		</div>
-  		<div class = "col-12 col-md-6">
-  	<label for ="fax" class = "form-label">팩스번호</label><input type="text" class = "form-control" id="fax">
-  		</div>
-  	</div>
-  </div>
-
-  
-  
+<form action="./formResult.html" method="post" id="" name="" enctype="multipart/form-data">
+<table border="1">
 	
-
-
-
-
+	<tr>
+		<th style="background-color: gray;">이름</th>
+		<th colspan="6"><input type="text" placeholder="이름"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">아이디</th>
+		<th colspan="2"><input type="text" placeholder="아이디"></th>
+		<th style="background-color: gray;">비밀번호</th>
+		<th colspan="2"><input type="password" placeholder="비밀번호"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">성별</th>
+		<th colspan="2"><input type="checkbox" id="" name="people" value="man">남
+		<input type="checkbox" id="" name="people" value="woman">여</th>
+		<th style="background-color: gray;">생일</th>
+		<th colspan="2"><input type="date" id="" name="date1" value="1995-05-31"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">국적</th>
+		<th colspan="2"><select class="form-select" aria-label="Default select example">
+			<option selected>대한민국</option>
+			<option>미국
+			<option>일본
+			<option>중국
+			<option>이탈리아
+		</select></th>
+		<th style="background-color: gray;">주소</th>
+		<th colspan="2"><input type="text" placeholder="서울"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">휴대폰</th>
+		<th colspan="2"><input type="text" placeholder="010-0000-0000"></th>
+		<th style="background-color: gray;">모바일 마케팅 수신 동의</th>
+		<th colspan="2"><input type="checkbox" id="" name="people" value="o">o
+		<input type="checkbox" id="" name="people" value="x">x</th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">전화번호</th>
+		<th colspan="2"><input type="text" placeholder="02-000-0000"></th>
+		<th style="background-color: gray;">팩스번호</th>
+		<th colspan="2"><input type="text" placeholder="032-000-0000"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">이메일</th>
+		<th colspan="2">.<input type="text" size="20px" placeholder="이메일을 입력해주세요"><select class="form-select" aria-label="Default select example">
+			<option selected>@naver.com</option>
+			<option>@gmail.com
+			<option>@daum.net
+			<option>@nexon.com
+		</select>
+			
+			</th>
+		<th style="background-color: gray;">이메일 마케팅 수신동의</th>
+		<th colspan="2"><input type="checkbox" id="" name="people" value="o">o
+		<input type="checkbox" id="" name="people" value="x">x</th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">추천인</th>
+		<th colspan="5"><input type="text" placeholder="추천인"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">비밀번호 문제</th>
+		<th colspan="2"><select class="form-select" aria-label="Default select example">
+			<option selected>좋아하는 게임은?</option>
+			<option>좋아하는 색깔은?
+			<option>좋아하는 노래는?
+			<option>좋아하는 음식은?
+		</select></th>
+		<th style="background-color: gray;">비밀번호 답</th>
+		<th colspan="2"><input type="text" placeholder="비밀번호 답"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">인스타그램</th>
+		<th colspan="3"><input type="checkbox" id="" name="people" value="o">o
+		<input type="checkbox" id="" name="people" value="x">x</th>
+		<th rowspan="3"><img src="../../table/k.jpg"width="150px" height="150px"></th>
 	
+		</tr>
 		
+	<tr>
+		<th style="background-color: gray;">홈페이지</th>
+		<th colspan="3"><input type="text" size="60px"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">직업</th>
+		<th colspan="3"><select class="form-select" aria-label="Default select example">
+			<option selected>무직</option>
+			<option>승무원
+			<option>회사원
+			<option>자영업
+		</select>
+		</th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">취미</th>
+		<th colspan="4"><input type="text"></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">결혼여부</th>
+		<th colspan="2"><input type="checkbox" id="" name="people" value="o">o
+		<input type="checkbox" id="" name="people" value="x">x</th>
+		<th style="background-color: gray;">결혼기념일</th>
+		<th colspan="2"><select class="form-select" aria-label="Default select example">
+			<option selected>1년</option>
+			<option>2년
+			<option>3년
+			<option>4년
+			<option>5년이상
+			</select></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">본인소개</th>
+		<th colspan="4"><input type="text" size="90px" placeholder="본인소개를 부탁드립니다."></th>
+		</tr>
+	<tr>
+		<th style="background-color: gray;">개인정보 유효기간</th>
+		<th colspan="4"><input type="text"  placeholder="n년"></th>
+		</tr>
+		
+	
+		</table>
+
+</form>
+<hr>
+<h2>프로젝트</h2>
+<form action="./formResult.html" method="post" id="" name="" enctype="multipart/form-data">
+<table border="1">
+	<tr>
+		<th rowspan="4" style="background-color: gray;">프로젝트 사항</th>
+		<th style="background-color: gray;">프로젝트기간</th>
+		<th style="background-color: gray;">프로젝트명</th>
+		<th style="background-color: gray;">프로젝트기관</th>
+	
+	</tr>
+	<tr>
+		<th><input type="date" id="" name="date1" value="2017-12-10">~
+		<input type="date" id="" name="date1" value="2018-02-03"></th>
+		<th><input type="text" value="@@@@@@@@프로젝트" size="50px"></th>
+		<th><input type="text" value="국민은행"></th>
+	
+	
+	</tr>
+	<tr>
+		<th><input type="date" id="" name="date1" value="2018-09-10">~
+		<input type="date" id="" name="date1" value="2019-04-05"></th>
+		<th><input type="text" value="@@@@@@@@@@프로젝트" size="50px"></th>
+		<th><input type="text" value="농협"></th>
+	
+	
+	</tr>
+	<tr>
+		<th><input type="date" id="" name="date1" value="2019-07-13">~
+		<input type="date" id="" name="date1" value="2020-12-30"></th>
+		<th><input type="text" value="@@@@@@@@@@@@프로젝트" size="50px"></th>
+		<th><input type="text" value="기업은행"></th>
+	
+	</tr>
 
 
-
+</table>
+</form>
+		<hr>
+		<form action="./memberbelist.html" method="get">
+		<button class="btn btn-warning">목록</button>
+		<button class="btn btn-dark">등록</button>
+	</form>
+		<!-- <form action="./memberForm.html" method="post">
+		<input  style="background-color: green;" type="submit" value="목록">
+		<input  style="background-color: red;" type="submit" value="등록">
+		</form> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Example split danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+		
 
 </body>
-	
-	
-
-		
-		
-		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
-		<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
-		<!--  <script src="../../_bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script> -->
-	
-	<!-- <form action="./memberForm.html" method="post">
-		<input style="background-color: green;" type="submit" value="삭제">
-	</form>
-	<form action="./memberEdit.html" method="post">
-		<input style="background-color: red;" type="submit" value="수정">
-	</form></html> -->
+</html>
